@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul,li{
+            list-style:none;
+        }
+        div{
+            width: 380px;
+            height: 180px;
+            overflow: hidden;
+        }
+        .box li:nth-child(1) {
+            background: url("images/1.jpg");
+        }
+        .box li:nth-child(2) {
+            background: url("images/2.jpg");
+        }
+        .box li:nth-child(3) {
+            background: url("images/3.jpg");
+        }
+        .box li:nth-child(4) {
+            background: url("images/4.jpg");
+        }
+        .box li:nth-child(5) {
+            background: url("images/5.jpg");
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/2.jpg" alt=""></li>
+        <li><img src="images/3.jpg" alt=""></li>
+        <li><img src="images/4.jpg" alt=""></li>
+        <li><img src="images/5.jpg" alt=""></li>
+    </ul>
+</div>
+<div class="box2">
+    <ul>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/2.jpg" alt=""></li>
+        <li><img src="images/3.jpg" alt=""></li>
+        <li><img src="images/4.jpg" alt=""></li>
+        <li><img src="images/5.jpg" alt=""></li>
+    </ul>
+</div>
+
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/jquery.imgscroll.min.js"></script>
+<script>
+    $(function () {
+        imgScroll.rolling({
+            name:'box',
+            width:'380px',
+            height:'180px',
+            direction:'top',
+            speed:10,
+            addcss:true,
+
+            name:'box2',
+            width:'380px',
+            height:'180px',
+            direction:'bottom',
+            speed:10,
+            addcss:true
+        })
+    })
+</script>
+</body>
+</html>

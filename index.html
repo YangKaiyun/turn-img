@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{padding:0; margin:0; font-family:"微软雅黑"}
+        li{list-style:none; padding:0; margin:0}
+        .mains{width:800px;padding-left:15px;margin:0 auto}
+        .mains .title{font-size:25px;text-align:center;padding:10px 5px}
+
+        .g1,.g2,.g3,.g4{width:380px; height:180px; float:left; margin:0 5px 5px 0}
+
+
+    </style>
+
+    <script src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.imgscroll.min.js"></script>
+    <script>
+        $(function(){
+            imgScroll.rolling({
+                name:'g1',
+                width:'380px',
+                height:'180px',
+                direction:'top',
+                speed:10,
+                addcss:true
+            });
+            imgScroll.rolling({
+                name:'g2',
+                width:'380px',
+                height:'180px',
+                direction:'left',
+                speed:20,
+                addcss:true
+            });
+            imgScroll.rolling({
+                name:'g3',
+                width:'380px',
+                height:'180px',
+                direction:'bottom',
+                speed:30,
+                addcss:true
+            });
+
+            imgScroll.rolling({
+                name:'g4',
+                width:'380px',
+                height:'180px',
+                direction:'right',
+                speed:40,
+                addcss:true
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="mains">
+    <div class="title">Jquery图片无缝连续循环滚动 支持上下左右的滚动</div>
+    <div class="g1">
+        <ul>
+            <li><img src="images/1.jpg"></li>
+            <li><img src="images/2.jpg"></li>
+            <li><img src="images/3.jpg"></li>
+            <li><img src="images/4.jpg"></li>
+            <li><img src="images/5.jpg"></li>
+
+        </ul>
+    </div>
+
+    <div class="g2">
+        <ul>
+            <li><img src="images/1.jpg"></li>
+            <li><img src="images/2.jpg"></li>
+            <li><img src="images/3.jpg"></li>
+            <li><img src="images/4.jpg"></li>
+            <li><img src="images/5.jpg"></li>
+
+        </ul>
+    </div>
+
+    <div class="g3">
+        <ul>
+            <li><img src="images/1.jpg"></li>
+            <li><img src="images/2.jpg"></li>
+            <li><img src="images/3.jpg"></li>
+            <li><img src="images/4.jpg"></li>
+            <li><img src="images/5.jpg"></li>
+
+        </ul>
+    </div>
+
+    <div class="g4">
+        <ul>
+            <li><img src="images/1.jpg"></li>
+            <li><img src="images/2.jpg"></li>
+            <li><img src="images/3.jpg"></li>
+            <li><img src="images/4.jpg"></li>
+            <li><img src="images/5.jpg"></li>
+
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
