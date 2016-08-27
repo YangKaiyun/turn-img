@@ -15,7 +15,7 @@
     </style>
 
     <script src="js/jquery-1.4.2.min.js"></script>
-    <script src="js/jquery.imgscroll.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.imgscroll.min.js"></script>
     <script>
         $(function(){
             imgScroll.rolling({
